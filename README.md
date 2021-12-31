@@ -21,9 +21,9 @@
     Built using Node.js
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/mmrzax/task-manager-api/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/mmrzax/task-manager-api/issues">Request Feature</a>
   </p>
 </div>
 
