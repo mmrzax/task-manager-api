@@ -4,7 +4,7 @@
   "description": "ToDo-App-Api, Built using Nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "node ./dist/index.js",
+    "start": "tsc && node ./dist/index.js",
     "dev": "env-cmd -f ./config/dev.env nodemon ./dist/index.js -e js,hbs,css,",
     "compile": "tsc --watch",
     "tsc": "tsc"
