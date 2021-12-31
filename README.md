@@ -28,6 +28,10 @@
 </div>
 
 
+* Things I have to do:
+- [ ] Add Email sending support for Signup and Login.
+- [ ] Build a front-end for this app.
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
