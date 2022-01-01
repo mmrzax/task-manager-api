@@ -26,7 +26,15 @@
     <a href="https://github.com/mmrzax/task-manager-api/issues">Request Feature</a>
   </p>
 </div>
+<br>
 
+
+<h2 align="center"> =>>> <a href="http://mrx-task-manager.herokuapp.com/">API Docs</a> <<<= </h2>
+
+  
+<br>
+<br>
+  
 
 * Things I have to do:
 - [ ] Add Email sending support for Signup and Login.
