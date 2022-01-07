@@ -1,3 +1,5 @@
 node_modules
 config
 dist
+src/tests
+src/math.ts

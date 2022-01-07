@@ -1,4 +1,6 @@
 {
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "./jest.config.js"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
     "target": "es6",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
@@ -97,11 +99,5 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-  },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "./tailwind.config.js"
-  ]
+  }
 }

@@ -3,9 +3,8 @@ import multer from 'multer';
 import sharp from 'sharp';
 import userModel from '../models/user';
 import auth from '../middleware/auth';
-// Import JS Modules
-//const sendWelcomeEmail = require('../emails/welcome');
-//const sendCancelationEmail = require('../emails/cancelation');
+import sendWelcomeEmail from '../emails/welcomeEmail';
+import sendCancelationEmail from '../emails/cancelationEmail';
 
 const router = Router();
 
@@ -14,7 +13,7 @@ router.post('/users', async (req, res) => {
   const user = new userModel(req.body);
   try {
     await user.save();
-    //sendWelcomeEmail(user.email, user.name);
+    sendWelcomeEmail(user.email, user.name);
     const token = await user.genAuthToken();
     //res.status(201).cookie('auth_token', token);
     res.status(201).send({ user, token });
@@ -100,7 +99,7 @@ router.patch('/users/me',auth, async (req, res) => {
 router.delete('/users/me', auth, async (req, res) => {
   try {
     await req.user.remove();
-    //sendCancelationEmail(req.user.email, req.user.name);
+    sendCancelationEmail(req.user.email, req.user.name);
     res.send(req.user);
   } catch (e) {
     res.status(500).send();
