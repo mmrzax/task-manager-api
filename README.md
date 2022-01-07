@@ -37,7 +37,7 @@
   
 
 * Things I have to do:
-- [ ] Add Email sending support for Signup and Login.
+- [x] Add Email sending support for Signup and Login.
 - [ ] Build a front-end for this app.
 
 
