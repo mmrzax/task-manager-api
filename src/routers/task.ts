@@ -1,5 +1,4 @@
 import { Router } from 'express';
-import { Types } from 'mongoose';
 import taskModel from '../models/task';
 import auth from '../middleware/auth';
 
@@ -22,7 +21,6 @@ router.post('/tasks', auth, async (req, res) => {
 // GET /tasks?sortBy=createdAt:desc
 router.get('/tasks', auth, async (req, res) => {
   try {
-    //const tasks = await taskModel.find({ owner: req.user._id });
     const match: { compeleted? : boolean } = {};
     const options: {
       limit?: number,
@@ -96,7 +94,6 @@ router.patch('/tasks/:id', auth, async (req, res) => {
 // Delete a User Task By Task ID
 router.delete('/tasks/:id', auth, async (req, res) => {
   try {
-    //const task = await taskModel.findByIdAndDelete(req.params.id);
     const task = await taskModel.findOneAndDelete({ _id: req.params.id, owner: req.user._id });
     if (!task) {
       res.status(404).send();

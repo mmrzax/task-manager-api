@@ -16,7 +16,6 @@ declare global {
 const auth = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const token: string | undefined = req.header('Authorization')?.replace('Bearer ', '');
-    //const token = req.cookies['auth_token'];
     if (!token) {
       throw new Error();
     }
