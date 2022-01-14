@@ -80,7 +80,7 @@
 * [Express.js](https://expressjs.com/)
 * [Mongoose.js](https://mongoosejs.com/)
 * [MongoDB](https://www.mongodb.com/)
-* [MailChimp](https://mailchimp.com/)
+* [Nodemailer](https://nodemailer.com/)
 * [Typescript](https://www.typescriptlang.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -93,9 +93,9 @@
 
 ### Prerequisites
 
-* npm
-* Node.js
-* MongoDB Community Server
+* [npm](https://npmjs.com/)
+* [Node.js](https://nodejs.org/)
+* [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 
 ### Installation
 
@@ -113,6 +113,8 @@
    PORT=<ENTER_YOUR_DEV_PORT>
    JWT_SECRET=<YOUR_SECRET_FOR_JWT>
    MONGODB_URL=mongodb://127.0.0.1:<MONGODB_SERVER_PORT>/task-manager-api
+   EMAIL_USER=<SENDER_EMAIL_ADDRESS>
+   EMAIL_PASS=<SENDER_EMAIL_PASSWORD>
    ```
 4. Run MongoDB local server
 
