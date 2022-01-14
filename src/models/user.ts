@@ -2,7 +2,7 @@ import { Schema, model } from 'mongoose';
 import { compare, hash } from 'bcryptjs';
 import isEmail from 'validator/lib/isEmail';
 import { sign } from 'jsonwebtoken';
-import { IUser, IUserModel, PublicProfile } from '../interfaces/interfaces'; // Import interfaces
+import { IUser, IUserModel, PublicProfile } from '../types/interfaces';
 import taskModel from './task';
 
 const userSchema = new Schema<IUser, IUserModel>({

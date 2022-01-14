@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { verify } from 'jsonwebtoken';
-import { IUserDocument, JwtPayload } from '../interfaces/interfaces';
+import { IUserDocument, JwtPayload } from '../types/interfaces';
 import userModel from '../models/user';
 
 // Declare Exrpess.Request Interface for using req.user and req.token in auth middleware
