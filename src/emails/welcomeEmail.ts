@@ -16,9 +16,8 @@ const sendWelcomeEmail = async (email: string, name: string) => {
   };
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
-      return console.log('Error: ', err);
+      return console.log('Email not send, Error: ', err);
     }
-    console.log(info);
   });
 };
 

@@ -11,14 +11,13 @@ const sendCancelationEmail = async (email: string, name: string) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: email,
-    subject: `Your Task-App Was Deleted`,
+    subject: `Your Task-App Account Was Deleted`,
     html: `<body><h2>Hello ${name},</h2><br><p>Sorry to see you leave us, your account was deleted.</p></body>`,
   };
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
-      return console.log('Error: ', err);
+      return console.log('Email not send, Error: ', err);
     }
-    console.log(info);
   });
 };
 
